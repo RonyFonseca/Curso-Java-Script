@@ -1,8 +1,7 @@
 function calcularVetor(vetor, numero){
-    for(let i = 0; i < vetor.length; i++){
+    for(let i = 0; vetor.length; i++){
         if(vetor[i] > 5){
-            let mult = vetor[i] > 5 * numero;
-            console.log(mult);
+            vetor[i] = vetor[i]*numero;
         };
     };
 };
