@@ -18,6 +18,22 @@
                 this._idade = idade; 
                 this._sexo = sexo;
             }
+
+            get nome (){
+                return this._nome; 
+            };
+
+            set nome (novoNome){
+                this._nome = novoNome;
+            };
+
+            get idade (){
+                return this._idade; 
+            };
+
+            set idade (novaIdade){
+                this._idade = novaIdade;
+            }
         };
 
         let person1 = new person("Bruno", 17, "Masculino");
@@ -27,6 +43,15 @@
         console.log(person1);
         console.log(person2);
         console.log(person3);
+
+        console.log(person1.nome);
+        console.log(person1.idade);
+
+        person1.nome = "João";
+        person1.idade = 10;
+
+        console.log(person1.nome);
+        console.log(person1.idade);
 
     </script>
 </body>
