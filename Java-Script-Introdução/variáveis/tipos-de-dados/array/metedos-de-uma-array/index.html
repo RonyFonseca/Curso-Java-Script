@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos de uma array</title>
+</head>
+<body>
+    <script>
+        let array = [{name:"Bruna", idade:17, number:undefined}, {name:"Ricardo", idade:25, number:81997465920}, {name:"Ana", idade:5, number:undefined}, {name:"Robson", idade:50, number:81993653890}]
+
+        let maiorIdade = array.find((user) => {
+            return user.idade > 18; 
+        }) ;
+
+        console.log(maiorIdade);
+
+        let maiorIdade02 = array.findIndex((user) => {
+            return user.idade > 18;
+        });
+        console.log(array);
+        console.log(maiorIdade02);
+
+        let numero = array.includes((user) => {
+            return user.number;
+        });
+        
+        console.log(numero);
+
+        let teste = array.map((user) => {
+            return array.add = 1; 
+        }); 
+
+        console.log(array);
+
+        let acharNumero = array.filter((user) => {
+            return user.number; 
+        }); 
+        
+        console.log(acharNumero);
+
+        let nameBuca = array.some((user) => {
+            return user.name; 
+        });
+
+        console.log(nameBuca);
+
+        let nameBusca = array.every((user) => {
+            return user.name;
+        });
+
+        console.log(nameBusca)
+    </script>
+</body>
+</html>
