@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brincrando com array</title>
+</head>
+<body>
+    <script>
+        let data = [{nome:"Rony", idade:17, number:1.2},{nome:"Bruno", idade:25, number:undefined},{nome:"Alice", idade:30, number:3.5},{nome:"Ricardo", idade:5, number:undefined}];
+
+        data.forEach((a) => {
+            console.log(a['nome'].includes('Bruno'));
+        });
+        console.log(data);
+        
+    </script>
+</body>
+</html>
