@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrizes</title>
+</head>
+<body>
+    <script>
+        //preira forma de declarar uma matriz
+        /*let matriz = new Array(3); 
+        matriz[0] = [1,2,3]; 
+        matriz[1] = [4,5,6]; 
+        matriz[2] = [7,8,9];*/
+
+        //SEGUNDA FORMA DE DECLARAR UMA MATRIZ
+        let matriz = [slot1=[1,2,3],slot2=[4,5,6],slot3=[7,8,9]]; 
+        matriz[3] = new Array(4); 
+        matriz[3] = [10,11,12,13]; 
+
+        function play() {
+            for (let lin=0; lin <4; lin++){
+                for (let col=0; col<4; col++){
+                    console.log(matriz[lin][col]);
+                };
+            };
+        };
+
+        function play2(){
+            for(let i=0; i<3; i++){
+                console.log(matriz[i]);
+            };
+        };
+
+        play();
+        play2();
+    </script>
+</body>
+</html>
