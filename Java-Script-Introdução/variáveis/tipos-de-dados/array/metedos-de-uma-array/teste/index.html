@@ -8,13 +8,100 @@
 </head>
 <body>
     <script>
-        let data = [{nome:"Rony", idade:17, number:1.2},{nome:"Bruno", idade:25, number:undefined},{nome:"Alice", idade:30, number:3.5},{nome:"Ricardo", idade:5, number:undefined}];
+        let array = [1,2,3,4,5]; 
+        array.forEach((number, index, array) => {
+            console.log(number);
+        }); //Ele vai mostrar cada um dos números da array; 
 
-        data.forEach((a) => {
-            console.log(a['nome'].includes('Bruno'));
+        console.log("--------///-------------------///----------") 
+        //Outro exemplo !
+        array.forEach((number) => {
+            soma = number + 3; 
+            console.log(soma);
+        }); //Ele vai percorrer cada item do array somando mais 3
+
+
+
+        //Map 
+        let user = [{nome:"Rony", dinheiro:10},
+                    {nome:"Bruno", dinheiro:30}, 
+                    {nome:"Marianne", dinheiro:50}];
+        user.map((aumento) => {
+            return aumento.dinheiro += 100; 
+        });//Aqui vai dar um aumento para cada um usuário !
+        console.log(user); 
+
+        //Outro exemplo 
+       /* user.map((novo) => {
+            return novo.nome = "teste";
         });
-        console.log(data);
-        
+        console.log(user);*/
+
+        //Filter 
+        let people =[{nome:"Alice", dinheiro:120},
+                     {nome:"Henrique", dinheiro:150},
+                     {nome:"Juliano", dinheiro:200},
+                     {nome:"Luciano", dinheiro:50}];
+
+        let salarioBaixo = people.filter((user) => {
+            return user.dinheiro < 130;
+        });
+        console.log(salarioBaixo);//Vai pegar as pessoas com salário abaixo de 130 
+
+        //Find
+        let students = [{nome:"Alice", dinheiro:120},
+                        {nome:"Henrique", dinheiro:150},
+                        {nome:"Juliano", dinheiro:200},
+                        {nome:"Luciano", dinheiro:50}];
+        let selectStudents = students.find((user) => {
+            return user.nome === "Alice"; 
+        });
+        console.log(selectStudents);
+
+        //FindeIndex 
+        /*let people_2 = [{nome:"Alice", dinheiro:120}, //indice [0];
+                        {nome:"Henrique", dinheiro:150}, //indice [1];
+                        {nome:"Juliano", dinheiro:200}, //indice [2];
+                        {nome:"Luciano", dinheiro:50}]; //indice [3];
+        let selectPeople_2 = people_2.findIndex((user) => {
+            return user.nome === "Luciano"; //Ele está no indice [3] 
+        });
+        console.log(selectPeople_2);
+
+        let selectPeople_3 = people_2.findIndex((user) => {
+            return user.dinheiro === 150; //Está no indice [1]; 
+        });
+        console.log(selectPeople_3);*/
+
+        //Every 
+        /*let people_2 = [{nome:"Alice", dinheiro:120},
+                        {nome:"Henrique", dinheiro:150},
+                        {nome:"Juliano", dinheiro:200},
+                        {nome:"Luciano", dinheiro:50}];
+        let salarioAbaixo = people_2.every((user) => {
+            return user.dinheiro <1000; 
+        });
+        console.log(salarioAbaixo);
+
+        let salarioAcima = people_2.every((user) => {
+            return user.dinheiro > 170; 
+        });
+        console.log(salarioAcima); */
+
+        //Some 
+        let people_2 = [{nome:"Alice", dinheiro:120},
+                        {nome:"Henrique", dinheiro:150},
+                        {nome:"Juliano", dinheiro:200},
+                        {nome:"Luciano", dinheiro:50}];
+        let salarioAbaixo = people_2.some((user) => {
+            return user.dinheiro < 100; 
+        });
+        console.log(salarioAbaixo);
+
+        let salarioAcima = people_2.every((user) => {
+            return user.dinheiro > 200; 
+        });
+        console.log(salarioAcima);
     </script>
 </body>
 </html>

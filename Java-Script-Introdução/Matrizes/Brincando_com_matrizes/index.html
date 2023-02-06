@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brincando come Matrizes</title>
+</head>
+<body>
+    <script>
+        let mochila = [ item1=["lapis", 2], item2=["Caneta", 4], item3=["Borracha", 1], item4=["Caderno", 3]]; 
+
+        for(lin=0; lin < mochila.length; lin++){
+            for(col=0; col< mochila.length; col++){
+                console.log(mochila[lin][col])
+            };
+        };
+
+        let newMochila = new Array(); 
+
+        let item01 = ["Pregos", 35];
+        let item02 = ["Cola", 1];
+        let item03 = ["Agua", 2];
+        let item04 = ["Frutas", 7];
+
+        newMochila.push(item01);
+        newMochila.push(item02);
+        newMochila.push(item03);
+        newMochila.push(item04);
+
+        console.log(newMochila[0][0] + " - " + newMochila[0][1]);
+        console.log(newMochila[1][0] + " - " + newMochila[1][1]);
+        console.log(newMochila[2][0] + " - " + newMochila[2][1]);
+        console.log(newMochila[3][0] + " - " + newMochila[3][1]);
+
+        
+    </script>
+</body>
+</html>
