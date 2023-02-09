@@ -5,13 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM - getElementById</title>
+    <style>
+        h1#teste{
+            color:gray; 
+        }
+    </style>
 </head>
 <body>
     <h1 id="teste">oi</h1>
+    <div id="caixa"></div>
+
     <script>
-        console.log(
-            document.getElementById("teste").innerHTML
-        );
+
+        var teste = document.getElementById("teste")
+        teste.style.color="red"; 
+        teste.style.fontSize="50px";
+
+        var cx =document.getElementById("caixa");
+        cx.style.width="300px";
+        cx.style.height="300px";
+        cx.style.backgroundColor="lightgray";
+        cx.style.border="1px solid black"; 
+        cx.style.borderRadius="10px";
+
+        var result = prompt("Digite um número");
+
+        try{ 
+            if(num > 10){
+                throw new Error("O número tem que ser abaixo de 10"); 
+            }
+            document.write(num); 
+        }catch(e){
+            console.log("ERROR: " + e.message);
+            num =10; 
+            document.write(num);
+        }finally{
+            document.write("<br>Processo Finalizado"); 
+        };
+
+
     </script>
 </body>
 </html>
