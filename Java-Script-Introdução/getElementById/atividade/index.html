@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetElementById</title>
+    <style>
+        #name{
+            color: green; 
+            text-align: center; 
+            font-size: 50px; 
+            font-family: Arial, Helvetica, sans-serif; 
+        }
+        #result{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px; 
+            text-align: center;
+        }
+        #result2{
+            text-align: center; 
+            color: green; 
+        }
+    </style>
+</head>
+<body>
+    <h1 id="name"></h1>
+    <p id="result2"></p>
+    <script>
+
+        let num = prompt("Digite um número inteiro menor que 30"); 
+        let name = document.getElementById("name");
+            name.innerHTML=num;
+        try{
+            if(num < 30 ){
+                document.getElementById("result2").innerHTML="Boa escolha!"; 
+            }else if(num >= 30){
+                document.getElementById("name").style.color="red";
+                throw new Error("O número que você digitou é maior do que 30, tente novamente com um número menor"); 
+            }
+            
+        }catch(e){
+            let men = document.getElementById("result2");
+                men.innerHTML="Sua escolha não foi muito boa";
+                men.style.color="red";
+        }
+
+    </script>
+</body>
+</html>
