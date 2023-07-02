@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>querySelector</title>
+</head>
+<body>
+    <h1 class="title">Rony</h1>
+    <p>teste</p>
+    <p>teste</p>
+    <div>
+        <h2 class="title">Java script</h2>
+        <p>iae mano</p>
+    </div>
+    <script>
+        let p = document.querySelectorAll("div > h2.title"); 
+        p[0].style.color="red";
+
+        var borda = document.querySelectorAll("p");
+        for(let i = 0; i < borda.length; i++){
+            console.log(borda[i].innerHTML);
+        }
+    </script>
+</body>
+</html>

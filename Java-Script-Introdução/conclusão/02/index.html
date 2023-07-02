@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisando Get Elements</title>
+</head>
+<body>
+
+    <p id="paragrafo">teste id</p>
+
+
+    <p>OI</p>
+    <p>OLÁ</p>
+    <p>HI</p>
+
+    <script>
+        let p = document.getElementById("paragrafo").innerHTML;
+        document.write(p); 
+
+        var ps = document.getElementsByTagName("p");
+        for(let i = 0; i < ps.length; i++){
+            console.log(ps[i].innerHTML);
+        };
+
+    </script>
+</body>
+</html>
