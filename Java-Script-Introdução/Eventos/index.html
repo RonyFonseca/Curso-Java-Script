@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Eventos</title>
+</head>
+<body onload="hora()">
+    <!--onload=""; é um evento que dispara quando a página carrega.-->
+    <div>
+        <p>Olá, <span id="hora"></span>, quero te fazer uma pergunta, você quer namorar comigo ?</p>
+        <!--criei um span para colocar a hora que vai ser carregada no java script.-->
+        
+        <div id="btns">
+            <button id="btn-yes" onclick="btnYes()">Sim</button>
+            <button id="btn-not" onmouseover="btnNot()">Não</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
