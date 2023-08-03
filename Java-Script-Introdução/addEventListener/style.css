@@ -1,0 +1,59 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+}
+body {
+    background-color: rgb(53, 53, 53);
+}
+
+form {
+    max-width: 500px;
+    margin: 200px auto;
+}
+
+#menu {
+    display: flex;
+}
+
+#sub-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu > #text-cont {
+    font-size: 50px;
+    max-width: 195px;
+    border-top-left-radius: 5px;
+}
+
+#btn,#btn-apagar {
+    border: none;
+    color: white;
+    padding: 20px;
+}
+
+#btn {
+    border-top-right-radius: 5px;
+    background-color: rgb(15, 121, 243);
+}
+
+#btn-apagar {
+    background-color: rgb(170, 18, 18);
+    border-bottom-right-radius: 5px;
+}
+
+#resultados {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#sin,#cos,#tan {
+    padding: 15px;
+    cursor: pointer;
+}
+
+#tan {
+    border-radius: 0px 0px 5px 5px;
+}
